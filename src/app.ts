@@ -349,3 +349,37 @@ class ProjectList implements DragTarget {
 const prjInput = new ProjectInput();
 const activeProjects = new ProjectList("active");
 const finishedProjects = new ProjectList("finished");
+
+interface Monster {}
+
+abstract class Abstract {
+  /*
+  ?? how do you get every name of monster
+  ?? 
+  */
+  public readonly name: string;
+  public location: [number, number];
+
+  constructor(
+    public challenge: number,
+    public weakness: number,
+    public locale: [number, number]
+  ) {
+    this.name = "joshua";
+    this.location = [...locale];
+    // console.log(this.challenge)
+  }
+
+  static logAll(name: string): void {
+    console.log(name);
+  }
+
+  abstract stats(): void;
+  //  abstract g(name:string) : void{
+  //   console.log(name)
+  // }
+
+  createMonster(monster: string): void {
+    //
+  }
+}
